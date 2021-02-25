@@ -1,0 +1,49 @@
+
+Kategoria
+- nazwa, opis
+- slug
+- użytkownik
+- zdjęcie
+
+Roślina (bazowy gatunek rośliny)
+- nazwa, opis
+- użytkownik
+- kategoria
+- okres podlewania
+- okres nawożenia
+- nasłonecznienie - 1 z 4 wartości (ciemno, w cieniu, częściowo słonecznie, słonecznie)
+- wymagana wilgotność - 1 z 3 wartości (niska, średnia, wysoka)
+- wymagana temperatura - 1 z 3 wartości (chłodno, przeciętnie, ciepło)
+- czy kwiecisty
+- trudność w utrzymaniu - 1 z 5 wartości (niska, średnio-niska, średnia, średnio-wysoka, wysoka)
+
+Pomieszczenie
+- nazwa, opis
+- użytkownik
+- nasłonecznienie (wartości jw.)
+- wilgotność (wartości jw.)
+- temperatura (wartości jw.)
+- czy przewiewne
+
+Roślina użytkownika
+- nazwa, opis
+- zdjęcie
+- użytkownik
+- pomieszczenie
+- bazowa roślina
+- data/czas ostatniego podlania
+- data/czas ostatniego nawiezienia
+
+---------------------------------------------------
+CRUD - Create Read Update Delete (+ List)
+
+List:           GET     /model  ?param=val&param=val
+Create:         POST    /model
+Read:           GET     /model/<id>
+Update:         PUT     /model/<id>
+Partial Update: PATCH   /model/<id>
+Delete:         DELETE  /model/<id>
+
+Zwracamy:       JSON
+
+alternatywa:    GraphQL
